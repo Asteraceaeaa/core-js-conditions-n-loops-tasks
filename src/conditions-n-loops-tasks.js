@@ -194,6 +194,9 @@ function convertNumberToString(numberStr) {
       default:
         return false;
     }
+    if (!(i + 1 === numberStr.length)) {
+      newStr += ' ';
+    }
   }
   return newStr;
 }
@@ -272,7 +275,7 @@ function isContainNumber(num, digit) {
  *  [1, 2, 3, 4, 5] => -1   => no balance element
  */
 function getBalanceIndex(arr) {
-  
+  return arr;
 }
 
 /**
@@ -363,8 +366,8 @@ function sortByAsc(/* arr */) {
  *  '012345', 3 => '024135' => '043215' => '031425'
  *  'qwerty', 3 => 'qetwry' => 'qtrewy' => 'qrwtey'
  */
-function shuffleChar(/* str, iterations */) {
-  throw new Error('Not implemented');
+function shuffleChar(str, iterations) {
+  return { str, iterations };
 }
 
 /**
@@ -385,7 +388,7 @@ function shuffleChar(/* str, iterations */) {
  * @returns {number} The nearest larger number, or original number if none exists.
  */
 function getNearestBigger(/* number */) {
-  
+  return false;
 }
 
 module.exports = {
